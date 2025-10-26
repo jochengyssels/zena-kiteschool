@@ -216,7 +216,7 @@ export default function SpotPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <Image
-                  src="/punta-trettu-beach-view-sardinia.jpg"
+                  src="/kite/kite-punta-trettu-wp.jpeg"
                   alt="Beach setup area with kites"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -228,7 +228,7 @@ export default function SpotPage() {
 
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <Image
-                  src="/spot/kites-in-action.jpeg"
+                  src="/kite/kite-environment-kiting.jpeg"
                   alt="Multiple kites in action on the water"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

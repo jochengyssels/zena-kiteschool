@@ -18,7 +18,7 @@ export default function BeginnerCoursePage() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/instructor-teaching-lagoon.jpeg"
+            src="/lessons/lesson-kite-launch-water.jpg"
             alt="Beginner Kitesurfing Course in Private Lagoon"
             fill
             className="object-cover"

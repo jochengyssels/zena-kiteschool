@@ -76,7 +76,7 @@ export default function StraplessCoursePage() {
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/corso-kitesurf-punta-trettu-scaled.jpg"
+                src="/lessons/lessons-strapless-start.jpg"
                 alt="Strapless kitesurfing"
                 fill
                 className="object-cover"

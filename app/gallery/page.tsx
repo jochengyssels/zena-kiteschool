@@ -190,15 +190,14 @@ export default function GalleryPage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl bg-gray-200">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-[#00b4d8] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-white border-b-8 border-b-transparent ml-1" />
-                  </div>
-                  <p className="text-muted-foreground">Video coming soon</p>
-                </div>
-              </div>
+            <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/4V64ysrQ9Rc?autoplay=1&mute=1&loop=1&playlist=4V64ysrQ9Rc&controls=1&modestbranding=1&rel=0"
+                title="Zena Kite School - Experience the Action"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>

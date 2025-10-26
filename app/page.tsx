@@ -393,7 +393,7 @@ export default function HomePage() {
                 ⭐ Premium
               </div>
               <div className="relative h-48">
-                <Image src="/lessons/lesson-toeside.jpg" alt="Private Lessons" fill className="object-cover" />
+                <Image src="/lessons/lesson-jump.jpeg" alt="Private Lessons" fill className="object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-serif font-bold mb-2">Private</h3>

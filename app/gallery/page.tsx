@@ -9,59 +9,72 @@ import { useState } from "react"
 
 export default function GalleryPage() {
   const galleryImages = [
-    { src: "/action-kitesurfing-punta-trettu.jpeg", alt: "Kitesurfing action at Punta Trettu", category: "Action" },
-    { src: "/instructor-teaching-lagoon.jpeg", alt: "Instructor teaching in lagoon", category: "Lessons" },
-    { src: "/zena-school-north-tent-sunset.jpeg", alt: "School setup at sunset", category: "Atmosphere" },
-    { src: "/team-group-photo-beach.jpeg", alt: "Team and students group photo", category: "Community" },
-    { src: "/happy-student-in-water.jpeg", alt: "Happy student learning", category: "Lessons" },
-    { src: "/action-kitesurfing-punta-trettu.jpeg", alt: "Advanced kitesurfing", category: "Action" },
-    { src: "/instructor-teaching-lagoon.jpeg", alt: "Beginner lesson", category: "Lessons" },
-    { src: "/team-group-photo-beach.jpeg", alt: "Beach community", category: "Community" },
-    { src: "/zena-school-north-tent-sunset.jpeg", alt: "Sunset session", category: "Atmosphere" },
-    { src: "/happy-student-in-water.jpeg", alt: "Student success", category: "Community" },
-    { src: "/action-kitesurfing-punta-trettu.jpeg", alt: "Riding the waves", category: "Action" },
-    { src: "/instructor-teaching-lagoon.jpeg", alt: "Professional instruction", category: "Lessons" },
-    // IKO Instructor Course October 2025
+    // Lessons folder
+    { src: "/lessons/lesson-kite-launch-water.jpg", alt: "Kite launch training in water", category: "Lessons" },
+    { src: "/lessons/lessons-kite-invert-loop.jpg", alt: "Advanced invert loop technique", category: "Lessons" },
+    { src: "/lessons/lesson-waterstart-kite.jpg", alt: "Waterstart lesson", category: "Lessons" },
+    { src: "/lessons/lessons-strapless-start.jpg", alt: "Strapless kitesurfing start", category: "Lessons" },
+    { src: "/lessons/lesson-piloting-water.jpeg", alt: "Kite piloting in water", category: "Lessons" },
+    { src: "/lessons/lessons-strapless-jump.jpg", alt: "Strapless jump training", category: "Lessons" },
+    { src: "/lessons/lesson-jump.jpeg", alt: "Jump technique lesson", category: "Lessons" },
+
+    // Team folder
+    {
+      src: "/team/team-matteo-sand-jump-board-grab.jpg",
+      alt: "Matteo performing sand jump with board grab",
+      category: "Team",
+    },
+    { src: "/team/team-instructor.jpg", alt: "IKO Level 1 Instructor Jochen", category: "Team" },
+    { src: "/team/team-instructor-female.jpg", alt: "IKO Level 2 Instructor Carlo", category: "Team" },
+
+    // Kite folder
+    { src: "/kite/kite-sardinia-sunset.webp", alt: "Kitesurfing at sunset in Sardinia", category: "Kite" },
+
+    // Vibe category (school atmosphere and community)
+    { src: "/zena-school-north-tent-sunset.jpeg", alt: "School setup at sunset", category: "Vibe" },
+    { src: "/team-group-photo-beach.jpeg", alt: "Team and students group photo", category: "Vibe" },
+    { src: "/happy-student-in-water.jpeg", alt: "Happy student learning", category: "Vibe" },
+
+    // Spots category (location and conditions)
+    { src: "/punta-trettu-hero-lagoon-kites.jpeg", alt: "Punta Trettu lagoon with kites", category: "Spots" },
+    { src: "/punta-trettu-aerial-kites.jpg", alt: "Aerial view of Punta Trettu", category: "Spots" },
+    { src: "/punta-trettu-lagoon-aerial.jpeg", alt: "Lagoon aerial view", category: "Spots" },
+    { src: "/action-kitesurfing-punta-trettu.jpeg", alt: "Kitesurfing action at Punta Trettu", category: "Spots" },
+
+    // Rental category (equipment)
+    { src: "/colorful-kitesurfing-kites-equipment.jpg", alt: "Colorful kites and equipment", category: "Rental" },
+    { src: "/kitesurfing-twin-tip-board-equipment.jpg", alt: "Twin tip boards", category: "Rental" },
+    { src: "/kitesurfing-harness-and-wetsuit-gear.jpg", alt: "Harness and wetsuit gear", category: "Rental" },
+
+    // IKO category (IKO Instructor Course October 2025)
     {
       src: "/iko-course-oct-2025-group-1.jpeg",
       alt: "IKO Instructor Course participants group photo",
-      category: "IKO Instructor Course October 2025",
+      category: "IKO",
     },
     {
       src: "/iko-course-oct-2025-lagoon-view.jpeg",
       alt: "Zena Kite School lagoon view during IKO course",
-      category: "IKO Instructor Course October 2025",
+      category: "IKO",
     },
     {
       src: "/iko-course-oct-2025-kite-setup.jpeg",
       alt: "IKO instructors teaching kite setup techniques",
-      category: "IKO Instructor Course October 2025",
+      category: "IKO",
     },
-    {
-      src: "/iko-course-oct-2025-group-2.jpeg",
-      alt: "IKO course participants at the beach",
-      category: "IKO Instructor Course October 2025",
-    },
-    {
-      src: "/iko-course-oct-2025-sunset.jpeg",
-      alt: "Sunset gathering during IKO instructor course",
-      category: "IKO Instructor Course October 2025",
-    },
-    {
-      src: "/iko-course-oct-2025-certificates-1.jpeg",
-      alt: "IKO graduates with their certificates",
-      category: "IKO Instructor Course October 2025",
-    },
+    { src: "/iko-course-oct-2025-group-2.jpeg", alt: "IKO course participants at the beach", category: "IKO" },
+    { src: "/iko-course-oct-2025-sunset.jpeg", alt: "Sunset gathering during IKO instructor course", category: "IKO" },
+    { src: "/iko-course-oct-2025-certificates-1.jpeg", alt: "IKO graduates with their certificates", category: "IKO" },
     {
       src: "/iko-course-oct-2025-certificates-2.jpeg",
       alt: "Successful IKO instructor certification",
-      category: "IKO Instructor Course October 2025",
+      category: "IKO",
     },
   ]
 
   const [selectedCategory, setSelectedCategory] = useState<string>("All")
 
-  const categories = ["All", ...Array.from(new Set(galleryImages.map((img) => img.category)))]
+  const categories = ["All", "Lessons", "Team", "Kite", "Vibe", "Spots", "Rental", "IKO"]
 
   const filteredImages =
     selectedCategory === "All" ? galleryImages : galleryImages.filter((img) => img.category === selectedCategory)
@@ -146,8 +159,8 @@ export default function GalleryPage() {
                 variant={selectedCategory === category ? "default" : "outline"}
                 className={
                   selectedCategory === category
-                    ? "bg-[#E91E63] hover:bg-[#C2185B] text-white"
-                    : "border-[#E91E63] text-[#E91E63] hover:bg-[#E91E63]/10"
+                    ? "bg-[#FFC107] hover:bg-[#FFB300] text-gray-900 font-medium"
+                    : "border-[#FFC107] text-[#FFC107] hover:bg-[#FFC107]/10"
                 }
               >
                 {category}

@@ -240,7 +240,7 @@ export default function SpotPage() {
 
               <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
                 <Image
-                  src="/spot/sunset-session.jpeg"
+                  src="kite/kite-sardinia-sunset.webp"
                   alt="Sunset kitesurfing session"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

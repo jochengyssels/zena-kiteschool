@@ -33,25 +33,25 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Marco Rossi",
-      role: "Head Instructor & Founder",
-      certification: "IKO Level 3 Instructor",
-      experience: "15+ years",
-      image: "/instructor-marco-kitesurfing-teacher.jpg",
+      name: "Matteo",
+      role: "Owner Zena Kiteschool",
+      certification: "",
+      experience: "",
+      image: "/team/team-matteo-sand-jump-board-grab.jpg",
     },
     {
-      name: "Sofia Bianchi",
-      role: "Senior Instructor",
-      certification: "IKO Level 2 Instructor",
-      experience: "10+ years",
-      image: "/instructor-sofia-female-kitesurf-teacher.jpg",
+      name: "Jochen",
+      role: "Instructor",
+      certification: "IKO Level 1 Instructor",
+      experience: "",
+      image: "/team/team-instructor.jpg",
     },
     {
-      name: "Luca Conti",
+      name: "Carlo",
       role: "Instructor",
       certification: "IKO Level 2 Instructor",
-      experience: "8+ years",
-      image: "/instructor-luca-kitesurf-coach.jpg",
+      experience: "",
+      image: "/team/team-instructor-female.jpg",
     },
   ]
 
@@ -168,15 +168,17 @@ export default function AboutPage() {
             {team.map((member, index) => (
               <Card key={index} className="border-none shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-80">
-                  <Image src="/images/design-mode/team-matteo-sand-jump-board-grab.jpg" alt={member.name} fill className="object-cover" />
+                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
                 </div>
                 <CardContent className="p-6 text-center">
                   <h3 className="text-xl font-serif font-bold mb-1">{member.name}</h3>
                   <p className="text-[#FFC107] font-medium mb-3">{member.role}</p>
-                  <div className="space-y-1 text-sm text-muted-foreground">
-                    <p>{member.certification}</p>
-                    <p>{member.experience} experience</p>
-                  </div>
+                  {(member.certification || member.experience) && (
+                    <div className="space-y-1 text-sm text-muted-foreground">
+                      {member.certification && <p>{member.certification}</p>}
+                      {member.experience && <p>{member.experience} experience</p>}
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}

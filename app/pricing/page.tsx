@@ -13,7 +13,7 @@ export default function PricingPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 md:py-32">
-        <div className="absolute inset-0 bg-[url('/action-kitesurfing-punta-trettu.jpeg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/kite/kite-sardinia-sunset.webp')] bg-cover bg-center opacity-20" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary px-4 py-2 rounded-full text-sm font-medium mb-6">

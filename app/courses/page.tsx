@@ -70,7 +70,7 @@ export default function CoursesPage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-80 md:h-auto">
                   <Image
-                    src="/instructor-teaching-lagoon.jpeg"
+                    src="/lessons/lesson-waterstart-kite.jpg"
                     alt="Beginner Course in Private Lagoon"
                     fill
                     className="object-cover"

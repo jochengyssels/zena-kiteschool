@@ -66,7 +66,7 @@ export default function SpotPage() {
         <section className="relative min-h-[48rem] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/spot/punta-trettu-hero-lagoon-kites.jpeg"
+              src="/spots/spot-flags-lagoon.jpg"
               alt="Punta Trettu Lagoon with Kitesurfers"
               fill
               className="object-cover"

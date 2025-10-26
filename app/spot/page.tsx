@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     title: "Wind in Sardinia – Spot & Forecast | Zena Kite School",
     description:
       "Live wind map and 10-day forecast for Punta Trettu. View real-time conditions and plan your kitesurfing session.",
-    images: ["/punta-trettu-hero-lagoon-kites.jpeg"],
+    images: ["/spot/punta-trettu-hero-lagoon-kites.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Wind in Sardinia – Spot & Forecast | Zena Kite School",
     description: "Live wind map and 10-day forecast for Punta Trettu kitesurfing spot in South Sardinia.",
-    images: ["/punta-trettu-hero-lagoon-kites.jpeg"],
+    images: ["/spot/punta-trettu-hero-lagoon-kites.jpeg"],
   },
 }
 
@@ -66,7 +66,7 @@ export default function SpotPage() {
         <section className="relative min-h-[48rem] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/punta-trettu-hero-lagoon-kites.jpeg"
+              src="/spot/punta-trettu-hero-lagoon-kites.jpeg"
               alt="Punta Trettu Lagoon with Kitesurfers"
               fill
               className="object-cover"
@@ -113,6 +113,53 @@ export default function SpotPage() {
               </p>
             </div>
 
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/spot/lagoon-aerial-view.jpeg"
+                  alt="Aerial view of the shallow lagoon"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-white font-bold text-xl mb-1">Shallow Lagoon</h3>
+                    <p className="text-white/90 text-sm">Perfect depth for learning</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/spot/flat-water-conditions.jpeg"
+                  alt="Flat water conditions at Punta Trettu"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-white font-bold text-xl mb-1">Flat Water</h3>
+                    <p className="text-white/90 text-sm">Butter-smooth conditions</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/spot/constant-wind.jpeg"
+                  alt="Constant wind conditions"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-white font-bold text-xl mb-1">Constant Wind</h3>
+                    <p className="text-white/90 text-sm">300+ windy days per year</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
               <Card className="border-2 border-[#FFC107]/20 shadow-lg hover:border-[#FFC107] transition-all">
                 <CardContent className="p-8 text-center">
@@ -157,9 +204,94 @@ export default function SpotPage() {
           </div>
         </section>
 
+        <section className="py-20 bg-gradient-to-b from-white to-[#f8f9fa]">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Discover Punta Trettu</h2>
+              <p className="text-lg text-muted-foreground">
+                Explore our spot through different perspectives and conditions
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/spot/beach-setup-area.jpeg"
+                  alt="Beach setup area with kites"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                  <p className="text-white font-semibold">Beach Setup Area</p>
+                </div>
+              </div>
+
+              <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/spot/kites-in-action.jpeg"
+                  alt="Multiple kites in action on the water"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                  <p className="text-white font-semibold">Perfect Conditions</p>
+                </div>
+              </div>
+
+              <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/spot/sunset-session.jpeg"
+                  alt="Sunset kitesurfing session"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                  <p className="text-white font-semibold">Sunset Sessions</p>
+                </div>
+              </div>
+
+              <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/spot/wide-angle-lagoon.jpeg"
+                  alt="Wide angle view of the lagoon"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                  <p className="text-white font-semibold">Spacious Lagoon</p>
+                </div>
+              </div>
+
+              <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/spot/private-section.jpeg"
+                  alt="Our private lagoon section"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                  <p className="text-white font-semibold">Private Section</p>
+                </div>
+              </div>
+
+              <div className="relative h-72 rounded-xl overflow-hidden shadow-lg group">
+                <Image
+                  src="/spot/crystal-clear-water.jpeg"
+                  alt="Crystal clear turquoise water"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                  <p className="text-white font-semibold">Crystal Clear Water</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <StatsCards />
 
-        <section aria-labelledby="forecast-title" className="py-20 bg-[#f8f9fa]">
+        <section className="py-20 bg-[#f8f9fa]">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 id="forecast-title" className="text-4xl md:text-5xl font-bold mb-4">
@@ -223,6 +355,22 @@ export default function SpotPage() {
               <h3 className="text-3xl md:text-4xl font-bold mb-8 text-center">
                 Mistral & Scirocco: How They Work Here
               </h3>
+
+              <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl mb-8">
+                <Image
+                  src="/spot/wind-conditions.jpeg"
+                  alt="Wind conditions at Punta Trettu"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end p-8">
+                  <div>
+                    <h4 className="text-white font-bold text-2xl mb-2">Perfect Wind Conditions</h4>
+                    <p className="text-white/90">Mistral and Scirocco winds create ideal kitesurfing conditions</p>
+                  </div>
+                </div>
+              </div>
+
               <Card className="border-2 border-[#FFC107]/20 shadow-lg">
                 <CardContent className="p-8">
                   <ul className="space-y-4">

@@ -5,6 +5,7 @@ import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import PageLoader from "@/components/page-loader"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description: "Where steady winds, shallow waters, and passionate instructors help you progress faster.",
     type: "website",
   },
-    generator: 'v0.app'
+  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${manrope.variable}`}>
       <body>
+        <PageLoader />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

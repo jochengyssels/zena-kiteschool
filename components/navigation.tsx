@@ -185,10 +185,10 @@ export function Navigation() {
             <Image
               src="/zena-kite-logo.png"
               alt="Zena Kite School"
-              width={252}
-              height={70}
+              width={512}
+              height={512}
               priority
-              sizes="252px"
+              sizes="352px"
               className="h-[70px] w-auto shrink-0 select-none pointer-events-none"
             />
           </Link>

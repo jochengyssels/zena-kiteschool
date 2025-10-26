@@ -116,7 +116,7 @@ export default function SpotPage() {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
                 <Image
-                  src="/punta-trettu-lagoon-aerial-view-sardinia.jpg"
+                  src="/spots/spot-kite-on-water.jpg"
                   alt="Aerial view of the shallow lagoon"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

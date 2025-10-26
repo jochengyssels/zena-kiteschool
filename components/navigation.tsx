@@ -206,7 +206,7 @@ export function Navigation() {
                     <button
                       className={`text-sm font-semibold transition-colors hover:text-[#E91E63] flex items-center gap-1 ${
                         isScrolled ? "text-foreground" : "text-white drop-shadow-lg"
-                      } ${hasActiveSubmenu(link.submenu) ? "text-[#FFC107] font-medium underline decoration-2 underline-offset-4" : ""}`}
+                      } ${hasActiveSubmenu(link.submenu) ? "text-[#FFC107] font-medium underline decoration-[#E91E63] decoration-2 underline-offset-4" : ""}`}
                       aria-haspopup="menu"
                       aria-expanded={openDropdown === link.href}
                       aria-controls={`submenu-${link.href}`}
@@ -229,7 +229,7 @@ export function Navigation() {
                               href={sublink.href}
                               className={`block px-4 py-2 text-sm transition-colors ${
                                 isActive(sublink.href)
-                                  ? "bg-[#FFC107]/20 text-[#E91E63] font-medium underline decoration-2 underline-offset-2 border-l-4 border-[#FFC107]"
+                                  ? "bg-[#FFC107]/20 text-[#E91E63] font-medium underline decoration-[#E91E63] decoration-2 underline-offset-2 border-l-4 border-[#E91E63]"
                                   : "text-foreground hover:bg-[#FFC107]/10 hover:text-[#E91E63]"
                               }`}
                               role="menuitem"
@@ -248,7 +248,7 @@ export function Navigation() {
                     href={link.href}
                     className={`text-sm font-semibold transition-colors hover:text-[#E91E63] ${
                       isScrolled ? "text-foreground" : "text-white drop-shadow-lg"
-                    } ${isActive(link.href) ? "text-[#FFC107] font-medium underline decoration-2 underline-offset-4" : ""}`}
+                    } ${isActive(link.href) ? "text-[#FFC107] font-medium underline decoration-[#E91E63] decoration-2 underline-offset-4" : ""}`}
                     role="menuitem"
                   >
                     {link.label}
@@ -289,7 +289,7 @@ export function Navigation() {
                     onClick={() => setOpenMobileAccordion(openMobileAccordion === link.href ? null : link.href)}
                     className={`font-semibold flex items-center justify-between w-full transition-colors min-h-[44px] ${
                       hasActiveSubmenu(link.submenu)
-                        ? "text-[#FFC107] underline decoration-2 underline-offset-4"
+                        ? "text-[#FFC107] underline decoration-[#E91E63] decoration-2 underline-offset-4"
                         : "text-foreground hover:text-[#E91E63]"
                     }`}
                     aria-expanded={openMobileAccordion === link.href}
@@ -308,7 +308,7 @@ export function Navigation() {
                           href={sublink.href}
                           className={`block text-sm transition-colors min-h-[44px] flex items-center ${
                             isActive(sublink.href)
-                              ? "text-[#E91E63] font-medium underline decoration-2 underline-offset-2 border-l-4 border-[#FFC107] pl-2"
+                              ? "text-[#E91E63] font-medium underline decoration-[#E91E63] decoration-2 underline-offset-2 border-l-4 border-[#E91E63] pl-2"
                               : "text-muted-foreground hover:text-[#E91E63]"
                           }`}
                           onClick={() => setIsMobileMenuOpen(false)}
@@ -325,7 +325,7 @@ export function Navigation() {
                   href={link.href}
                   className={`font-semibold transition-colors min-h-[44px] flex items-center ${
                     isActive(link.href)
-                      ? "text-[#FFC107] underline decoration-2 underline-offset-4"
+                      ? "text-[#FFC107] underline decoration-[#E91E63] decoration-2 underline-offset-4"
                       : "text-foreground hover:text-[#E91E63]"
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}

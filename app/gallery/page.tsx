@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Star, Quote } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function GalleryPage() {
   const galleryImages = [
@@ -73,11 +73,23 @@ export default function GalleryPage() {
   ]
 
   const [selectedCategory, setSelectedCategory] = useState<string>("All")
+  const [visibleCount, setVisibleCount] = useState(8)
 
   const categories = ["All", "Lessons", "Team", "Kite", "Vibe", "Spots", "Rental", "IKO"]
 
   const filteredImages =
     selectedCategory === "All" ? galleryImages : galleryImages.filter((img) => img.category === selectedCategory)
+
+  useEffect(() => {
+    setVisibleCount(8)
+  }, [selectedCategory])
+
+  const displayedImages = filteredImages.slice(0, visibleCount)
+  const hasMoreImages = visibleCount < filteredImages.length
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 8)
+  }
 
   const testimonials = [
     {
@@ -169,7 +181,7 @@ export default function GalleryPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredImages.map((image, index) => (
+            {displayedImages.map((image, index) => (
               <div
                 key={index}
                 className="relative h-80 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group"
@@ -189,6 +201,21 @@ export default function GalleryPage() {
               </div>
             ))}
           </div>
+
+          {hasMoreImages && (
+            <div className="text-center mt-12">
+              <Button
+                onClick={handleLoadMore}
+                size="lg"
+                className="bg-[#FFC107] hover:bg-[#FFB300] text-gray-900 font-medium px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
+              >
+                Load More Photos
+              </Button>
+              <p className="text-sm text-muted-foreground mt-4">
+                Showing {displayedImages.length} of {filteredImages.length} photos
+              </p>
+            </div>
+          )}
         </div>
       </section>
 

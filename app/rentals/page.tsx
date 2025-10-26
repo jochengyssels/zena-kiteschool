@@ -85,7 +85,7 @@ export default function RentalsPage() {
                   </div>
                 )}
                 <div className="relative h-48">
-                  <Image src={pkg.image || "/lessons/lessons-walk-with-kite.jpg"} alt={pkg.name} fill className="object-cover" />
+                  <Image src={pkg.image || "/public/lessons/lessons-walk-with-kite.jpg"} alt={pkg.name} fill className="object-cover" />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>

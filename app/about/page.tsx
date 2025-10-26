@@ -168,7 +168,7 @@ export default function AboutPage() {
             {team.map((member, index) => (
               <Card key={index} className="border-none shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-80">
-                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                  <Image src="/images/design-mode/team-matteo-sand-jump-board-grab.jpg" alt={member.name} fill className="object-cover" />
                 </div>
                 <CardContent className="p-6 text-center">
                   <h3 className="text-xl font-serif font-bold mb-1">{member.name}</h3>

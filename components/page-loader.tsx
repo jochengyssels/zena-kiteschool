@@ -31,7 +31,7 @@ export default function PageLoader() {
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black">
       <video
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/zena-loading-animation-SqhauRJPR4xPUQks1ImEKsjSQ5id8J.mp4"
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/zena-animation-Ko5lxrTHmClqHUrdXqAqE6z49a9qgA.mp4"
         autoPlay
         muted
         playsInline

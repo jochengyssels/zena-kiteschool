@@ -12,29 +12,7 @@ export function Footer() {
       </div>
 
       <div className="container mx-auto px-4 py-12 relative z-10">
-        <div className="bg-gradient-to-r from-[#FFC107] to-[#E91E63] rounded-2xl p-8 mb-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Ready to Ride the Wind?</h3>
-          <p className="text-gray-900/80 mb-6 max-w-2xl mx-auto">
-            Book your spot in our exclusive private lagoon. Limited spaces available daily.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-8 py-3 bg-gray-900 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors"
-            >
-              Book Your Lesson
-            </Link>
-            <a
-              href="https://wa.me/393406000542?text=Hi%2C%20I%27d%20like%20to%20book%20a%20kitesurfing%20lesson%20at%20Zena%20Kite%20School"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-[#25D366] text-white rounded-lg font-semibold hover:bg-[#20BA5A] transition-colors"
-            >
-              <Phone className="w-5 h-5" />
-              WhatsApp Us Now
-            </a>
-          </div>
-        </div>
+        
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>

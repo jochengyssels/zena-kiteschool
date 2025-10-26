@@ -116,7 +116,7 @@ export default function SpotPage() {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
                 <Image
-                  src="/spot/lagoon-aerial-view.jpeg"
+                  src="/gallery-lagoon-shallow-water.jpg"
                   alt="Aerial view of the shallow lagoon"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -131,7 +131,7 @@ export default function SpotPage() {
 
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
                 <Image
-                  src="/spot/flat-water-conditions.jpeg"
+                  src="/kite/kite-punta-trettu-wp.jpeg"
                   alt="Flat water conditions at Punta Trettu"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -146,7 +146,7 @@ export default function SpotPage() {
 
               <div className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
                 <Image
-                  src="/spot/constant-wind.jpeg"
+                  src="/spots/spot-flags-lagoon.jpg"
                   alt="Constant wind conditions"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

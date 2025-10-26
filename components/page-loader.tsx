@@ -29,9 +29,9 @@ export default function PageLoader() {
   if (!loading || !shouldShow) return null
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white">
       <video
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/zena-animated-hd-PLszW2K5G2PixGwRwTd7sibpZLcElZ.mp4"
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/zena-loader-simple-RUPwfzeIYbIUfI3cKiuAhvQUuHqWck.mp4"
         autoPlay
         muted
         playsInline

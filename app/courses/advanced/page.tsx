@@ -76,7 +76,7 @@ export default function AdvancedCoursePage() {
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/advanced-kitesurfing-tricks-jumps.jpg"
+                src="/lessons/lessons-kite-invert-loop.jpg"
                 alt="Advanced kitesurfing tricks"
                 fill
                 className="object-cover"

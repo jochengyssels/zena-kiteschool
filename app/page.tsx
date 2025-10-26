@@ -362,7 +362,7 @@ export default function HomePage() {
                 🏖️ Private Spot
               </div>
               <div className="relative h-48">
-                <Image src="/happy-student-in-water.jpeg" alt="Strapless Course" fill className="object-cover" />
+                <Image src="/lessons/lessons-strapless-jump.jpg" alt="Strapless Course" fill className="object-cover" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-serif font-bold mb-2">Strapless</h3>
